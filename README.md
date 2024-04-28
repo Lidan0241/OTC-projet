@@ -14,7 +14,7 @@ Il consiste à créer des résumés concis et informatifs de longs articles de p
 - taille: 10k<n<100k
 - langue: anglais, monolingue
 - 3 parties: train: 45k rows; dev: 5.62k rows; test: 5.62k rows
-- Lien du corpus: [[https://huggingface.co/datasets/samsum](https://huggingface.co/datasets/multi_news?row=5)](https://huggingface.co/datasets/multi_news)
+- Lien du corpus: https://huggingface.co/datasets/multi_news?row=0
 
 
 ## Étape de Résumé
