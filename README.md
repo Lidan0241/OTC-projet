@@ -33,3 +33,13 @@ biu-nlp/f-coref, Ssarion/gpt2-multi-news, ccdv/lsg-bart-base-4096-multinews
 ## À savoir sur le corpus
 -Document : texte d'articles de presse séparés par le jeton spécial `|||||`.
 - un ensemble de données composé d'articles de presse et de résumés écrits par des humains de ces articles, provenant du site newser.com. Chaque résumé est rédigé professionnellement par des rédacteurs et inclut des liens vers les articles originaux cités.
+
+## 01/05/2024
+
+### Web-scraping depuis Le Monde
+- pour pouvoir trouver des ressources qui correspondent à mon corpus de référence: résumé + texte long, j'ai trouvé les articles sur le site Le Monde et extrait leur titre ainsi que leur contenu en utilisant les librairies requests et SeautifulSoup depuis une dizaine de site web
+
+### Transormation en dataframe
+- J'ai d'abord transformé les données scrapées en format json, ensuite j'ai utilisé pandas pour le retransformé en dataframe pour mieux voir les données en labélisant chaque données de `title` et `content`
+- J'ai ainsi fait des analyses sur le nombre de mot de content et de title de chaque article, après visualization de matplotlib, la proportion de title dans chaque article prend 3.9% de taille par rapport à celle de content, ce qui paraît assez raisonnable.
+- la tâche de repérer le mot le plus fréquent dans un article me paraît également pertinent dans le cadre de ce projet. J'ai donc utilisé nltk pour d'abord supprimer les stopwords de chaque contenu, et compter le mot le plus fréquent d'un article et sa fréquence. J'ai remarqué que le mot le plus fréquent apparaît souvent dans le titre. J'ai donc ajouté ces informations au dataframe.
