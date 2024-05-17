@@ -1,0 +1,51 @@
+1. Initialiser votre repo github et envoyer le lien à mon adresse
+mail
+2. Initialiser votre README.md
+Avec la tâche que vous voulez réaliser
+un corpus qui répond à cette tâche
+à quel type de prédiction peut servir ce corpus
+à quel modèle il a servi
+Apprenez moi des choses sur un corpus
+Et le tout avec des beaux messages de commit
+
+1. Initialiser les dossiers de votre repo
+réfléchissez aux traitements que l'on va eﬀectuer pendant le
+cours : de quels dossiers vous allez avoir besoin
+2. Mettez en place un script python pour récupérer
+automatiquement des données depuis le web (quelques
+éléments suﬀiront)
+3. Nettoyez ces données pour les présenter sous forme de texte
+4. On veut obtenir les même colonnes que votre corpus de
+référence (le corpus de la semaine dernière)
+
+Dans un notebook
+1. Ouvrir son corpus avec pandas
+2. Convertir son corpus au format Dataset
+Avec les colonnes de sont corpus de référence
+c.a.d. ajouter des colonnes quand il y a en a besoin etc.
+Pour avancer sur la séance suivante :
+Lancer l'annotation morphosyntaxique des données textuelles avec votre annotateur
+préféré (SpaCy si vous savez pas)
+
+TP 2 - TROUVER LES STATISTIQUES ADAPTÉES À SON CORPUS
+À partir du corpus de référence que vous avez choisi
+Trouvez les statistiques qui ont été eﬀectuées pour prouver la qualité du corpus
+Les implémenter et les calculer pour votre corpus
+Est-ce que le calcul est couteux ?
+si oui, stocker les résultats dans votre structure de données
+si non, faire une méthode pour pouvoir facilement appliquer le calcul sur vos données.
+
+TP 3 - VISUALISER LES STATISTIQUES DE CORPUS
+1. Visualiser votre corpus à partir de statistiques de textes
+a. longueur des textes
+b. mots fréquents (zipf)
+c. les statistiques adaptées à votre tâche
+
+1. Mesurer la correlation entre deux variables de votre corpus (ex. longueur des
+textes/longueur des résumés) a. Comment augmenter la p-value si elle n'est pas
+significative ?
+2. Eliminer les données abérrantes
+3. Augmenter ses données
+4. Splitter son corpus en test et train
+5. Evaluer son corpus avec les métriques adaptées
+6. Proposer une métrique pour son corpus autre que les métriques de la tâche
