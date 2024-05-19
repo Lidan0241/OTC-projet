@@ -1,5 +1,5 @@
 .DS_Store
-data
+.ipynb_checkpoints
 __pycache__
 __cache__
 model_word2vec.bin
